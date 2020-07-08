@@ -19,7 +19,7 @@ function Login({accessToken, setLoginToken}) {
               <TextField variant={"outlined"} label={"아이디"} value={userId} onChange={e => setUserId(e.target.value)} inputProps={{maxLength: 30}}/>
           </div>
           <div style={{marginTop: 10}}>
-            <TextField variant={"outlined"} type={"password"}label={"비밀번"} value={password} onChange={e => setPassword(e.target.value)} inputProps={{maxLength: 30}}/>
+            <TextField variant={"outlined"} type={"password"}label={"비밀번호"} value={password} onChange={e => setPassword(e.target.value)} inputProps={{maxLength: 30}}/>
           </div>
           <div style={{marginTop: 10}}>
             <Button variant={"contained"} color={"primary"} onClick={() => checkLogin(userId, password, setLoginToken)}>
